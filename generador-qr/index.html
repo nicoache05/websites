@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Generador de códigos QR gratis online | QR Listo</title>
+  <meta name="description" content="Crea códigos QR gratis para enlaces, WiFi, WhatsApp y más. Con tus colores y logo, descarga PNG o SVG. Sin registro y 100 % privado." />
+  <!-- TODO: cuando tengas tu dominio propio, cambia esta dirección (y la de og:url) -->
+  <link rel="canonical" href="https://nicoache05.github.io/websites/generador-qr/" />
+  <meta name="theme-color" content="#16151d" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Generador de códigos QR gratis | QR Listo" />
+  <meta property="og:description" content="QR para enlaces, WiFi y WhatsApp con tus colores y logo. Gratis, sin registro y sin subir nada a ningún servidor." />
+  <meta property="og:url" content="https://nicoache05.github.io/websites/generador-qr/" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.svg?v=20261002" type="image/svg+xml" />
+
+  <!-- TODO (cookies): cuando actives AdSense, pega aquí el aviso de cookies que te dé Google. -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20261002" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "QR Listo — Generador de códigos QR",
+    "description": "Generador de códigos QR gratis para enlaces, WiFi, WhatsApp, correo, teléfono y texto, con colores, estilos y logo. Funciona en tu navegador.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Cualquiera (navegador web)",
+    "inLanguage": "es",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Los códigos QR que creo aquí caducan?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Son códigos QR estáticos: la información va dentro del propio dibujo, así que funcionan para siempre. Solo dejarían de servir si el enlace al que apuntan deja de existir." } },
+      { "@type": "Question", "name": "¿Es gratis de verdad? ¿Tiene algún límite?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí, es gratis y sin límite. No necesitas registrarte, no hay marca de agua y puedes usar los códigos para fines comerciales." } },
+      { "@type": "Question", "name": "¿Puedo poner mi logo en el centro del código QR?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Sube tu logo o elige un emoji. Al hacerlo, el código se vuelve más resistente para que se pueda leer aunque el logo tape una parte. Aun así, escanéalo con tu móvil antes de imprimir muchas copias." } },
+      { "@type": "Question", "name": "¿Descargo el QR en PNG o en SVG?",
+        "acceptedAnswer": { "@type": "Answer", "text": "PNG es ideal para webs, redes sociales, WhatsApp y documentos. SVG es mejor para imprenta: se puede ampliar a cualquier tamaño sin perder calidad." } },
+      { "@type": "Question", "name": "¿Cómo creo un código QR para conectarse al WiFi?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Elige la pestaña WiFi, escribe el nombre de tu red y la contraseña, y descarga el código. Quien lo escanee con la cámara del móvil se conectará sin escribir la contraseña." } },
+      { "@type": "Question", "name": "¿Puedo cambiar el enlace después de imprimir el código?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Un QR estático no se puede editar después. Si crees que cambiarás el destino, apunta el código a una página tuya cuyo contenido puedas actualizar." } },
+      { "@type": "Question", "name": "¿Qué tamaño mínimo debe tener un QR impreso?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Como regla general, al menos 2 × 2 cm. Para leerlo de lejos, el lado del código debería medir una décima parte de la distancia de lectura: a 3 metros, unos 30 cm." } },
+      { "@type": "Question", "name": "¿Mis datos se envían a algún servidor?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. El código se crea dentro de tu propio navegador. Tus enlaces, contraseñas de WiFi y logos no salen de tu dispositivo." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#herramienta">Ir a la herramienta</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="QR Listo, inicio">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="3"/><rect x="18" y="2" width="12" height="12" rx="3"/><rect x="2" y="18" width="12" height="12" rx="3"/><rect x="19" y="19" width="4" height="4" rx="1"/><rect x="25" y="25" width="4" height="4" rx="1"/><rect x="25" y="19" width="4" height="4" rx="1"/><rect x="19" y="25" width="4" height="4" rx="1"/></svg>
+        <span>QR Listo</span>
+      </a>
+      <nav class="header-nav" aria-label="Principal">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap" aria-labelledby="titulo">
+      <h1 id="titulo">Generador de códigos QR gratis</h1>
+      <p class="subtitle">Para enlaces, WiFi, WhatsApp y más. Con tus colores y tu logo, sin registro.</p>
+
+      <div class="tool-card" id="herramienta" data-state="idle">
+        <noscript><p class="noscript">Esta herramienta necesita JavaScript activado en tu navegador para crear el código QR.</p></noscript>
+
+        <div class="tool-grid">
+          <!-- ===== Columna de datos ===== -->
+          <div class="tool-input">
+            <div class="type-tabs" role="tablist" aria-label="Tipo de código QR">
+              <button type="button" role="tab" class="tab" data-type="url" aria-selected="true">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>Enlace</button>
+              <button type="button" role="tab" class="tab" data-type="wifi" aria-selected="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg>WiFi</button>
+              <button type="button" role="tab" class="tab" data-type="whatsapp" aria-selected="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg>WhatsApp</button>
+              <button type="button" role="tab" class="tab" data-type="text" aria-selected="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg>Texto</button>
+              <button type="button" role="tab" class="tab" data-type="email" aria-selected="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Correo</button>
+              <button type="button" role="tab" class="tab" data-type="tel" aria-selected="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Teléfono</button>
+            </div>
+
+            <form class="fields" id="qr-form" autocomplete="off" onsubmit="return false">
+              <div class="panel" data-panel="url">
+                <label class="field">
+                  <span>Enlace o página web</span>
+                  <input type="text" inputmode="url" name="url" placeholder="https://mi-negocio.com" />
+                </label>
+              </div>
+
+              <div class="panel" data-panel="wifi" hidden>
+                <label class="field">
+                  <span>Nombre de la red (WiFi)</span>
+                  <input type="text" name="ssid" placeholder="MiCasa_5G" />
+                </label>
+                <div class="row">
+                  <label class="field grow">
+                    <span>Contraseña</span>
+                    <input type="text" name="wifipass" placeholder="La contraseña del WiFi" />
+                  </label>
+                  <label class="field">
+                    <span>Seguridad</span>
+                    <select name="wifisec">
+                      <option value="WPA">WPA/WPA2</option>
+                      <option value="WEP">WEP</option>
+                      <option value="nopass">Sin contraseña</option>
+                    </select>
+                  </label>
+                </div>
+                <label class="check"><input type="checkbox" name="wifihidden" /> Red oculta</label>
+              </div>
+
+              <div class="panel" data-panel="whatsapp" hidden>
+                <label class="field">
+                  <span>Número con código de país</span>
+                  <input type="tel" name="wanum" placeholder="+52 55 1234 5678" />
+                </label>
+                <label class="field">
+                  <span>Mensaje inicial (opcional)</span>
+                  <input type="text" name="wamsg" placeholder="Hola, quiero hacer un pedido" />
+                </label>
+              </div>
+
+              <div class="panel" data-panel="text" hidden>
+                <label class="field">
+                  <span>Texto</span>
+                  <textarea name="text" rows="3" placeholder="Escribe el texto que verá quien escanee el código"></textarea>
+                </label>
+              </div>
+
+              <div class="panel" data-panel="email" hidden>
+                <label class="field">
+                  <span>Correo de destino</span>
+                  <input type="email" name="mailto" placeholder="hola@mi-negocio.com" />
+                </label>
+                <label class="field">
+                  <span>Asunto (opcional)</span>
+                  <input type="text" name="mailsub" placeholder="Consulta" />
+                </label>
+              </div>
+
+              <div class="panel" data-panel="tel" hidden>
+                <label class="field">
+                  <span>Número de teléfono</span>
+                  <input type="tel" name="tel" placeholder="+34 600 123 456" />
+                </label>
+              </div>
+
+              <details class="design" id="design">
+                <summary>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 0 0 0 20c1 0 1.5-.8 1.5-1.6 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.7-1.6 1.6-1.6H16a6 6 0 0 0 6-6C22 6 17.5 2 12 2z"/></svg>
+                  Personalizar diseño <small>colores, estilo y logo</small>
+                </summary>
+
+                <div class="design-body">
+                  <fieldset class="group">
+                    <legend>Estilo</legend>
+                    <div class="chips" data-style-chips>
+                      <label class="chip"><input type="radio" name="style" value="clasico" checked /><span>Clásico</span></label>
+                      <label class="chip"><input type="radio" name="style" value="redondeado" /><span>Redondeado</span></label>
+                      <label class="chip"><input type="radio" name="style" value="puntos" /><span>Puntos</span></label>
+                      <label class="chip"><input type="radio" name="style" value="elegante" /><span>Elegante</span></label>
+                    </div>
+                  </fieldset>
+
+                  <div class="row colors">
+                    <label class="color-field">
+                      <input type="color" name="fg" value="#16151d" />
+                      <span>Color del código</span>
+                    </label>
+                    <label class="color-field">
+                      <input type="color" name="bg" value="#ffffff" />
+                      <span>Color de fondo</span>
+                    </label>
+                    <label class="check"><input type="checkbox" name="transparent" /> Fondo transparente</label>
+                  </div>
+
+                  <fieldset class="group">
+                    <legend>Centro del código</legend>
+                    <div class="emojis" data-emojis>
+                      <button type="button" class="emoji" data-emoji="🍽️" aria-label="Plato">🍽️</button>
+                      <button type="button" class="emoji" data-emoji="☕" aria-label="Café">☕</button>
+                      <button type="button" class="emoji" data-emoji="📶" aria-label="WiFi">📶</button>
+                      <button type="button" class="emoji" data-emoji="⭐" aria-label="Estrella">⭐</button>
+                      <button type="button" class="emoji" data-emoji="💬" aria-label="Mensaje">💬</button>
+                      <button type="button" class="emoji" data-emoji="🛒" aria-label="Carrito">🛒</button>
+                      <button type="button" class="emoji" data-emoji="📍" aria-label="Ubicación">📍</button>
+                      <button type="button" class="emoji" data-emoji="❤️" aria-label="Corazón">❤️</button>
+                    </div>
+                    <div class="logo-row">
+                      <label class="btn btn-ghost btn-sm">
+                        <input type="file" name="logo" accept="image/png,image/jpeg,image/webp,image/svg+xml" hidden />
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg>
+                        Subir mi logo
+                      </label>
+                      <button type="button" class="btn btn-link btn-sm" data-clear-center hidden>Quitar</button>
+                    </div>
+                  </fieldset>
+                </div>
+              </details>
+            </form>
+          </div>
+
+          <!-- ===== Columna del resultado ===== -->
+          <div class="tool-output">
+            <div class="preview" data-preview>
+              <div class="preview-canvas" data-qr aria-label="Vista previa del código QR" role="img"></div>
+              <span class="preview-tag">Ejemplo · escribe tus datos</span>
+            </div>
+            <ul class="warnings" data-warnings aria-live="polite"></ul>
+
+            <div class="downloads">
+              <button type="button" class="btn btn-primary btn-big" data-download="png" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M7 11l5 5 5-5M4 20h16"/></svg>
+                Descargar PNG
+              </button>
+              <div class="downloads-secondary">
+                <button type="button" class="btn btn-ghost" data-download="svg" disabled>SVG (imprenta)</button>
+                <label class="size-select">
+                  <span class="sr">Tamaño del PNG</span>
+                  <select name="size" data-size>
+                    <option value="512">512 px</option>
+                    <option value="1024" selected>1024 px</option>
+                    <option value="2048">2048 px</option>
+                  </select>
+                </label>
+                <button type="button" class="btn btn-ghost" data-copy hidden disabled>Copiar imagen</button>
+              </div>
+            </div>
+            <p class="error-msg" data-error hidden></p>
+          </div>
+        </div>
+      </div>
+
+      <p class="privacy">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+        <span><strong>100 % privado:</strong> el código se crea en tu dispositivo. Tus enlaces, contraseñas y logos no se suben a ningún servidor.</span>
+      </p>
+    </section>
+
+    <div class="wrap">
+      <div class="ad-slot ad-leaderboard" aria-hidden="true">
+        <!-- PEGA AQUÍ TU CÓDIGO DE ADSENSE (bloque horizontal) -->
+        <span>Publicidad</span>
+      </div>
+    </div>
+
+    <section class="wrap section" id="como-funciona" aria-labelledby="como-titulo">
+      <h2 id="como-titulo">Cómo crear tu código QR en 3 pasos</h2>
+      <ol class="steps">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg>
+          <h3>Escribe tus datos</h3>
+          <p>Elige qué quieres compartir: un enlace, tu WiFi, tu WhatsApp, un texto, un correo o un teléfono.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z"/></svg>
+          <h3>Dale tu estilo</h3>
+          <p>Cambia colores y forma de los puntos, y pon tu logo o un emoji en el centro. Lo ves al instante.</p>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M7 11l5 5 5-5M4 20h16"/></svg>
+          <h3>Descárgalo</h3>
+          <p>En PNG para web y redes, o en SVG para imprimir a cualquier tamaño. Sin marcas de agua.</p>
+        </li>
+      </ol>
+    </section>
+
+    <article class="wrap section prose" aria-labelledby="guia-titulo">
+      <h2 id="guia-titulo">Todo lo que necesitas saber sobre los códigos QR</h2>
+      <p>Un <strong>código QR</strong> es un cuadrado de puntos que guarda información: normalmente un enlace, pero también los datos de una red WiFi, un número de teléfono o un texto. Cualquier móvil moderno lo lee con la cámara, sin instalar nada. Por eso se ven en cartas de restaurante, tarjetas de visita, carteles, envases y escaparates.</p>
+
+      <h3>¿Qué tipo de QR te conviene?</h3>
+      <ul>
+        <li><strong>Enlace:</strong> lleva a tu web, tu carta digital, tu perfil de Instagram o una reseña en Google. Es el más usado.</li>
+        <li><strong>WiFi:</strong> tus clientes o invitados se conectan sin dictar la contraseña. Muy útil en cafeterías, alojamientos y oficinas.</li>
+        <li><strong>WhatsApp:</strong> abre un chat contigo con un mensaje ya escrito, perfecto para pedidos y reservas.</li>
+        <li><strong>Correo y teléfono:</strong> abren el correo o el marcador del móvil con tus datos listos.</li>
+      </ul>
+
+      <h3>Consejos para que tu QR se lea siempre</h3>
+      <p><strong>Contraste ante todo:</strong> el código debe ser oscuro sobre un fondo claro. Los colores de tu marca quedan muy bien siempre que haya bastante diferencia entre el código y el fondo. Si no la hay, esta herramienta te avisa. Los códigos claros sobre fondo oscuro funcionan en la mayoría de móviles, pero algunos antiguos no los leen.</p>
+      <p><strong>Cuanto más corto, mejor:</strong> un enlace corto genera un código con menos puntos, más grandes y más fáciles de leer, sobre todo si lo imprimes pequeño.</p>
+      <p><strong>Tamaño al imprimir:</strong> no lo hagas de menos de 2 × 2 cm. Para leerlo de lejos, el lado del código debería medir una décima parte de la distancia: a 3 metros, unos 30 cm. Para imprenta, descarga el <strong>SVG</strong>, que no pierde calidad al ampliarlo.</p>
+      <p><strong>Pruébalo antes de imprimir:</strong> escanéalo con tu móvil (y si puedes con otro más) antes de encargar cien copias, sobre todo si le pusiste logo.</p>
+
+      <h3>QR estático: gratis y para siempre</h3>
+      <p>Los códigos de QR Listo son <strong>estáticos</strong>: la información va dentro del dibujo, así que no caducan, no dependen de ningún servicio y no te cobrarán una suscripción más adelante. La única contrapartida es que no se pueden editar después de imprimirlos. Si crees que cambiarás el destino, haz que apunte a una página tuya que puedas actualizar.</p>
+    </article>
+
+    <div class="wrap">
+      <div class="ad-slot ad-content" aria-hidden="true">
+        <!-- PEGA AQUÍ TU CÓDIGO DE ADSENSE (bloque dentro del contenido) -->
+        <span>Publicidad</span>
+      </div>
+    </div>
+
+    <section class="wrap section" id="preguntas" aria-labelledby="faq-titulo">
+      <h2 id="faq-titulo">Preguntas frecuentes</h2>
+      <div class="faq">
+        <details>
+          <summary>¿Los códigos QR que creo aquí caducan?</summary>
+          <p>No. Son códigos QR estáticos: la información va dentro del propio dibujo, así que funcionan para siempre. Solo dejarían de servir si el enlace al que apuntan deja de existir.</p>
+        </details>
+        <details>
+          <summary>¿Es gratis de verdad? ¿Tiene algún límite?</summary>
+          <p>Sí, es gratis y sin límite. No necesitas registrarte, no hay marca de agua y puedes usar los códigos para fines comerciales.</p>
+        </details>
+        <details>
+          <summary>¿Puedo poner mi logo en el centro del código QR?</summary>
+          <p>Sí. Sube tu logo o elige un emoji. Al hacerlo, el código se vuelve más resistente para que se pueda leer aunque el logo tape una parte. Aun así, escanéalo con tu móvil antes de imprimir muchas copias.</p>
+        </details>
+        <details>
+          <summary>¿Descargo el QR en PNG o en SVG?</summary>
+          <p>PNG es ideal para webs, redes sociales, WhatsApp y documentos. SVG es mejor para imprenta: se puede ampliar a cualquier tamaño sin perder calidad.</p>
+        </details>
+        <details>
+          <summary>¿Cómo creo un código QR para conectarse al WiFi?</summary>
+          <p>Elige la pestaña WiFi, escribe el nombre de tu red y la contraseña, y descarga el código. Quien lo escanee con la cámara del móvil se conectará sin escribir la contraseña.</p>
+        </details>
+        <details>
+          <summary>¿Puedo cambiar el enlace después de imprimir el código?</summary>
+          <p>No. Un QR estático no se puede editar después. Si crees que cambiarás el destino, apunta el código a una página tuya cuyo contenido puedas actualizar.</p>
+        </details>
+        <details>
+          <summary>¿Qué tamaño mínimo debe tener un QR impreso?</summary>
+          <p>Como regla general, al menos 2 × 2 cm. Para leerlo de lejos, el lado del código debería medir una décima parte de la distancia de lectura: a 3 metros, unos 30 cm.</p>
+        </details>
+        <details>
+          <summary>¿Mis datos se envían a algún servidor?</summary>
+          <p>No. El código se crea dentro de tu propio navegador. Tus enlaces, contraseñas de WiFi y logos no salen de tu dispositivo.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="wrap section" aria-labelledby="mas-titulo">
+      <h2 id="mas-titulo">Más herramientas</h2>
+      <!-- Cuando crees otras herramientas, convierte cada tarjeta en un enlace <a href="otra-herramienta/"> -->
+      <div class="more-tools">
+        <div class="tool-teaser"><strong>Generador de contraseñas</strong><span>Próximamente</span></div>
+        <div class="tool-teaser"><strong>Compresor de imágenes</strong><span>Próximamente</span></div>
+        <div class="tool-teaser"><strong>Contador de días</strong><span>Próximamente</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> QR Listo · Hecho para funcionar en tu navegador.</p>
+      <nav aria-label="Legal">
+        <a href="privacidad.html">Privacidad y cookies</a>
+        <a href="aviso-legal.html">Aviso legal</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script defer src="lib/vendor/qr-code-styling.js?v=20261002"></script>
+  <script defer src="lib/manifest.js?v=20261002"></script>
+  <script defer src="main.js?v=20261002"></script>
+</body>
+</html>
