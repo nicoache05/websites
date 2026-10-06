@@ -1,0 +1,64 @@
+name: Finanzas
+options:
+  bundleIdPrefix: com.tuempresa
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    # Pon aquí tu Team ID de Apple Developer (o elígelo en Xcode > Signing & Capabilities)
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    TARGETED_DEVICE_FAMILY: "1"
+targets:
+  Finanzas:
+    type: application
+    platform: iOS
+    sources:
+      - path: Finanzas
+      - path: Shared
+    info:
+      path: Finanzas/Info.plist
+      properties:
+        CFBundleDisplayName: Finanzas
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        ITSAppUsesNonExemptEncryption: false
+        CFBundleURLTypes:
+          - CFBundleURLName: com.tuempresa.finanzas
+            CFBundleURLSchemes: [finanzas]
+    entitlements:
+      path: Finanzas/Finanzas.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.tuempresa.finanzas]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tuempresa.finanzas
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - target: FinanzasWidgets
+    scheme: {}
+  FinanzasWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: FinanzasWidgets
+      - path: Shared
+    info:
+      path: FinanzasWidgets/Info.plist
+      properties:
+        CFBundleDisplayName: Finanzas
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: FinanzasWidgets/FinanzasWidgets.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.tuempresa.finanzas]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tuempresa.finanzas.widgets
+        SKIP_INSTALL: YES

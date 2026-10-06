@@ -1,0 +1,29 @@
+name: Finanzas iOS build
+
+on:
+  push:
+    paths:
+      - "FinanzasApp/**"
+      - ".github/workflows/finanzas-ios.yml"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    defaults:
+      run:
+        working-directory: FinanzasApp
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar XcodeGen
+        run: brew install xcodegen
+      - name: Generar proyecto
+        run: xcodegen generate
+      - name: Compilar (simulador, sin firma)
+        run: |
+          xcodebuild build \
+            -project Finanzas.xcodeproj \
+            -scheme Finanzas \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO | tee build.log
+          exit ${PIPESTATUS[0]}
